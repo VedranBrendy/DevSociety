@@ -1,6 +1,10 @@
+//
+// CSS for Dashboard, Experiance, Education, Social Links
+//
+
 /* 
 ** Dashboard
- */
+*/
 
 body#dashboard {
   background-color: $dark-grey;
@@ -9,13 +13,14 @@ body#dashboard {
 thead th,
 tbody td {
   color: $fourth !important;
+}
 
-} 
-
-
-thead{
-    th {
+thead {
+  th {
     border: 1px solid $white !important;
   }
-
 }
+
+/* 
+** Social Links
+*/

@@ -5,6 +5,13 @@ body#user-profile {
 .top-card {
   background-color: $fourth;
   color: $white;
+
+  .social-icons{
+    a{
+      margin: 0 0.4rem;
+      color: $white;
+    }
+  }
 }
 .skill-icons i {
   padding-left: 0.6rem;
@@ -40,5 +47,13 @@ body#user-profile {
       padding: 0.5rem;
       margin-right: 0.5rem;
     }
+  }
+}
+
+.position,
+.study {
+  display: flex;
+  p:last-child {
+    margin-left: 0.5rem;
   }
 }
