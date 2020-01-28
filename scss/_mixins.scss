@@ -1,0 +1,105 @@
+@mixin centerelrements {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin a-links($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;
+      text-decoration: none;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+/*
+small mobile device 0-500px
+mobile device 0-600px
+tablet 600-900
+tablet landscape 900-1200
+desktop 1200 -1800
+large display 1800+
+$screenSize
+smallPhone5
+phone6
+tabletPort7
+tabletPort8
+tabletPort9
+tabletLand1
+tabletLand2
+tabletLand3
+desktop 1800px +
+lgdesktop
+
+*/
+
+@mixin media($screenSize) {
+  @if $screenSize == smallPhone {
+    @media (max-width: 31.25rem) {
+      //500px /16
+      @content;
+    }
+  }
+  @if $screenSize == mediumPhone {
+    @media (max-width: 37.5rem) {
+      //
+      @content;
+    }
+  }
+  @if $screenSize == tablet700 {
+    // 700/16
+    @media (max-width: 43.5rem) {
+      @content;
+    }
+  }
+  @if $screenSize == tablet766 {
+    // 700/16
+    @media (max-width: 48rem) {
+      @content;
+    }
+  }
+  @if $screenSize == tablet800 {
+    @media (max-width: 50rem) {
+      @content;
+    }
+  }
+  @if $screenSize == tablet900 {
+    @media (max-width: 56.25rem) {
+      @content;
+    }
+  }
+  @if $screenSize == tablet1000 {
+    @media (max-width: 62.5rem) {
+      @content;
+    }
+  }
+  @if $screenSize == tablet1100 {
+    @media (max-width: 68.5rem) {
+      @content;
+    }
+  }
+  @if $screenSize == tablet1200 {
+    @media (max-width: 75rem) {
+      @content;
+    }
+  }
+  @if $screenSize == tablet1300 {
+    @media (max-width: 81.25rem) {
+      @content;
+    }
+  }
+  @if $screenSize == desktop {
+    @media (min-width: 112.5rem) {
+      @content;
+    }
+  }
+}

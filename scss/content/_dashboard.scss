@@ -1,0 +1,21 @@
+/* 
+** Dashboard
+ */
+
+body#dashboard {
+  background-color: $dark-grey;
+}
+
+thead th,
+tbody td {
+  color: $fourth !important;
+
+} 
+
+
+thead{
+    th {
+    border: 1px solid $white !important;
+  }
+
+}

@@ -1,0 +1,114 @@
+/*
+** Navbar 
+ */
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  .user-dropdown {
+    position: relative;
+    img {
+      border: $white 1px solid;
+      padding: 5px;
+    }
+    .online-status {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: lightgreen;
+    }
+  }
+  ul {
+    display: inline-block;
+    position: relative;
+    li {
+      padding-right: 0.5rem;
+    }
+  }
+  .message-badge,
+  .notification-badge {
+    position: absolute;
+    border-radius: 50%;
+    top: 1px;
+    left: 20px;
+  }
+
+  @include media(tablet766) {
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    ul li {
+      padding-right: 2rem;
+    }
+  }
+  .dropdown-menu {
+    width: 18rem;
+  }
+
+  /* Messages and notifications Dropdown*/
+  /* Notifications use same classes as messages */
+  .messages-container {
+    .message {
+      display: grid;
+      grid-template-columns: 18% 82%;
+      padding-left: 0.5rem;
+      align-items: center;
+
+      .message-content > div {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .message-user-name {
+        font-size: 0.9rem;
+        margin: 0;
+      }
+      .short-message {
+        margin: 0;
+      }
+      .message-time {
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+      }
+    }
+    .message-border {
+      width: 90%;
+      border-bottom: 1px solid #f3f3f3;
+      margin: 0.3rem 0.6rem;
+      padding: 0 0.8rem;
+    }
+
+    .single-message-link {
+      color: $dark-grey;
+    }
+  }
+  .message-dropdown,
+  .notification-dropdown {
+    width: 22rem;
+
+    .message-menu {
+      display: flex;
+      justify-content: space-between;
+    }
+    .msg-settings,
+    .msg-clear {
+      color: $dark-primary;
+      padding: 0 1rem;
+    }
+    /* Title of dropdown */
+    .title {
+      margin: 0;
+      padding: 0;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+  }
+}

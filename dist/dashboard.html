@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+  <title>DevSociety</title>
+</head>
+
+<body id="dashboard">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="wall.html">DevSociety</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <!-- Home Icon -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-home fa-lg"></i></a>
+          </li>
+
+          <!-- Work Icon -->
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-briefcase fa-lg"></i></a>
+          </li>
+
+          <!-- Message Icon -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><i class="fas fa-envelope fa-lg"></i>
+                <span class="badge badge-warning message-badge">10</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right message-dropdown" aria-labelledby="dropdownMenuButton">
+                <div class="message-menu">
+                  <a href="#" class="msg-settings">Settings</a>
+                  <h6 class="font-weight-bold title">Messages</h6>
+                  <a href="#" class="msg-clear">Clear All</a>
+                </div>
+                <div class="dropdown-divider"></div>
+
+                <div class="messages-container">
+                  <a href="" class="single-message-link">
+                    <div class="message">
+                      <img class="round-img mr-2 img-xs"
+                        src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="" />
+                      <div class="message-content">
+                        <div>
+                          <h5 class="message-user-name">Johan Does</h5>
+                          <span class="message-time "><i class="fas fa-clock"></i> 3 min ago</span>
+                        </div>
+                        <div class="short-message">Lorem ipsum dolor sit amet ...</div>
+                      </div>
+                    </div>
+
+                  </a>
+
+                  <div class="message-border"></div>
+
+                  <div class="message">
+                    <img class="round-img mr-2 img-xs"
+                      src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="" />
+                    <div class="message-content">
+                      <div>
+                        <h5 class="message-user-name">Johan Does</h5>
+                        <span class="message-time "><i class="fas fa-clock"></i> 3 min ago</span>
+                      </div>
+                      <div class="short-message">Lorem ipsum dolor sit amet ...</div>
+                    </div>
+                  </div>
+
+                  <div class="message-border"></div>
+
+                  <div class="message">
+                    <img class="round-img mr-2 img-xs"
+                      src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="" />
+                    <div class="message-content">
+                      <div>
+                        <h5 class="message-user-name">Johan Does</h5>
+                        <span class="message-time "><i class="fas fa-clock"></i> 3 min ago</span>
+                      </div>
+                      <div class="short-message">Lorem ipsum dolor sit amet ...</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item d-flex justify-content-center align-items-center bg-primary" href="#">
+                  View All Messages</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Notification Icon -->
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link" href="#" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false"><i class="fas fa-bell fa-lg"></i>
+                <span class="badge badge-warning notification-badge">10</span>
+              </a>
+              <div class="dropdown-menu  dropdown-menu-right notification-dropdown"
+                aria-labelledby="dropdownMenuButton">
+                <div class="message-menu">
+                  <a href="#" class="msg-settings">Settings</a>
+                  <h6 class="font-weight-bold title">Notifications</h6>
+                  <a href="#" class="msg-clear">Clear All</a>
+                </div>
+                <div class="dropdown-divider"></div>
+
+                <div class="messages-container">
+                  <a href="" class="single-message-link">
+                    <div class="message">
+                      <img class="round-img mr-2 img-xs"
+                        src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="" />
+                      <div class="message-content">
+                        <div>
+                          <h5 class="message-user-name">Johan Does</h5>
+                          <span class="message-time "><i class="fas fa-clock"></i> 3 min ago</span>
+                        </div>
+                        <div class="short-message">Lorem ipsum dolor sit amet ...</div>
+                      </div>
+                    </div>
+
+                  </a>
+
+                  <div class="message-border"></div>
+
+                  <div class="message">
+                    <img class="round-img mr-2 img-xs"
+                      src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="" />
+                    <div class="message-content">
+                      <div>
+                        <h5 class="message-user-name">Johan Does</h5>
+                        <span class="message-time "><i class="fas fa-clock"></i> 3 min ago</span>
+                      </div>
+                      <div class="short-message">Lorem ipsum dolor sit amet ...</div>
+                    </div>
+                  </div>
+
+                  <div class="message-border"></div>
+
+                  <div class="message">
+                    <img class="round-img mr-2 img-xs"
+                      src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="" />
+                    <div class="message-content">
+                      <div>
+                        <h5 class="message-user-name">Johan Does</h5>
+                        <span class="message-time "><i class="fas fa-clock"></i> 3 min ago</span>
+                      </div>
+                      <div class="short-message">Lorem ipsum dolor sit amet ...</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item d-flex justify-content-center align-items-center bg-primary" href="#">
+                  View All Notifications</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- User img & dropdown -->
+          <li class="nav-item">
+            <div class="dropdown user-dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img class="round-img navbar-img"
+                  src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="" />
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
+                <h6 class="ml-3 font-weight-bold">Online status</h6>
+                <div class="dropdown-divider"></div>
+                <div class="radio ml-3">
+                  <label><input type="radio" name="optradio" checked> Online</label>
+                </div>
+                <div class="radio ml-3">
+                  <label><input type="radio" name="optradio"> Offline</label>
+                </div>
+                <div class="dropdown-divider"></div>
+                <h6 class="ml-3 font-weight-bold">Custom status</h6>
+                <div class="dropdown-divider"></div>
+                <form class="px-4 py-3">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username"
+                      aria-label="Custom ststus" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-secondary" type="button">Add</button>
+                    </div>
+                  </div>
+                </form>
+                <div class="dropdown-divider"></div>
+                <h6 class="ml-3 font-weight-bold">
+                  User Options
+                </h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Setings</a>
+                <a class="dropdown-item" href="user-profile.html">User profile</a>
+                <a class="dropdown-item" href="dashboard.html">Dashboard</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item d-flex justify-content-center align-items-center bg-primary" href="#"><i
+                    class="fas fa-sign-out-alt"></i> Logout</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Section: User profile -->
+  <section class="container margin-top">
+    <div class="row">
+      <h1 class="text-green">Dashboard</h1>
+    </div>
+
+    <!-- Experience -->
+    <div class="row">
+      <a href="user-profile.html" class="btn-green btn">View profile</a>
+      <a href="" class="btn-green btn">Add experience</a>
+      <a href="" class="btn-green btn">Add Education</a>
+    </div>
+    <div class="row">
+      <h3 class="my-3">Experience</h3>
+
+      <table class="table table-borderless">
+        <thead class="table-head">
+          <tr>
+            <th scope="col">Company</th>
+            <th scope="col">Titile</th>
+            <th scope="col">Years</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Microsoft</td>
+            <td>Senior Developer</td>
+            <td>Oct 2011 - Current</td>
+            <td><a href="" class="btn btn-danger btn-sm">Delete</a></td>
+          </tr>
+          <tr>
+
+            <td>Sun Sys</td>
+            <td>Lead Developer</td>
+            <td>Jan 2011 - Oct 2011</td>
+            <td><a href="" class="btn btn-danger btn-sm">Delete</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <!-- Row experience -->
+
+
+    <!-- Education -->
+    <div class="row">
+      <h3 class="my-3">Education</h3>
+
+      <table class="table table-borderless">
+        <thead class="table-head">
+          <tr>
+            <th scope="col">Scool</th>
+            <th scope="col">Degree</th>
+            <th scope="col">Years</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>University of Malesia</td>
+            <td>Masters</td>
+            <td>Oct 2011 - Current</td>
+            <td><a href="" class="btn btn-danger btn-sm">Delete</a></td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script src="js/custom.js"></script>
+  <!-- <script src="js/form.js"></script> -->
+</body>
+
+</html>

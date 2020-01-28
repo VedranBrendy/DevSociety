@@ -1,0 +1,124 @@
+/* 
+** Wall 
+*/
+/* Left Content */
+.user-card {
+  border: 1px solid $dark-grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .user-top {
+    width: 100%;
+    background: $dark-primary;
+    height: 6rem;
+    padding-top: 25px;
+
+    img {
+      display: block;
+      height: 120px;
+      width: 120px;
+      margin: auto;
+      border: 5px solid $white;
+    }
+  }
+
+  .user-job-title {
+    padding-bottom: 0 !important;
+  }
+  .user-specs {
+    width: 100%;
+    .user-specs-details {
+      width: 100%;
+      padding-top: 1rem;
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+
+      li {
+        border-top: 1px solid $light-grey;
+        width: 100%;
+        padding-top: 1rem;
+      }
+
+      span {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  .user-name {
+    padding-top: 4rem;
+  }
+} /* User card */
+
+/* Center content */
+.menu-top {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center-content {
+  /*  border: $dark-grey 1px solid; */
+  height: auto;
+  overflow: hidden;
+
+  .card-header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    img {
+      float: left;
+    }
+    .header-user-name {
+      padding-top: 5px;
+      margin: 0;
+    }
+    .header-time {
+      font-size: 0.9rem;
+    }
+    .header-menu {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .dropdown-menu li a{
+        font-size: .9rem;
+      }
+      .dropdown-menu a {
+        font-size: 0.8rem;
+        color: $grey;
+      }
+
+      .dropdown-menu a:hover {
+        color: $primary;
+      }
+    }
+    .dropdown-toggle:after {
+      content: none;
+    }
+
+    .fa-ellipsis-v:hover {
+      color: $primary;
+      font-size: 1.2rem;
+    }
+  }
+  .post-bottom {
+    padding: 1rem 1rem 0;
+    display: flex;
+    justify-content: space-between;
+
+    .comments {
+      display: flex;
+    }
+    i {
+      font-size: 1.5rem;
+    }
+
+    .badge {
+      font-size: 1rem;
+    }
+  }
+}

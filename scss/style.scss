@@ -1,0 +1,18 @@
+@import "config";
+@import "utilities";
+@import "mixins";
+@import "form";
+
+/* Content */
+@import "content/navbar";
+@import "content/landing";
+@import "content/wall";
+@import "content/dashboard";
+@import "content/user-profile";
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: $light-grey;
+}

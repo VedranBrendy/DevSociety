@@ -1,0 +1,96 @@
+// Landing page
+/* Top Login & Register Btn-s: Landing page*/
+.top-navbar {
+  display: flex;
+  justify-content: flex-end;
+
+  ul li {
+    padding-top: 3rem;
+    .register-btn {
+      display: none;
+      margin-right: 2rem;
+    }
+    .login-btn {
+      margin-right: 2rem;
+    }
+  }
+}
+
+/* Landing page: Register Form  */
+#register-form,
+#login-form {
+  margin: 1rem 2.5rem 1rem 1rem;
+  transition: opacity 0.5s ease;
+
+  .form-group {
+    width: 100%;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.6rem 0 2rem 0;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    background: $dark-grey;
+    color: #fff;
+  }
+
+  :focus {
+    border: solid 1px $primary !important;
+    outline: none;
+    color: $primary !important;
+  }
+
+  input[type="submit"] {
+    font: inherit;
+  }
+}
+
+/* Login form */
+#login-form {
+  display: none;
+}
+
+.landing {
+  position: relative;
+  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  height: 100vh;
+  overflow: hidden;
+
+  &-inner {
+    color: #fff;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @include media(tablet700) {
+      grid-template-columns: 1fr;
+      grid-template-rows: 200px 300px;
+      .x-large {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+      .lead {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  #register-form,
+  #login-form {
+    @include media(tablet700) {
+      align-self: flex-start;
+    }
+  }
+}
