@@ -61,9 +61,9 @@ lgdesktop
       @content;
     }
   }
-  @if $screenSize == tablet766 {
-    // 700/16
-    @media (max-width: 48rem) {
+  @if $screenSize == tablet768 {
+    // 768/16
+    @media (max-width: 48.1rem) {
       @content;
     }
   }
