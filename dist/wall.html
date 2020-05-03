@@ -216,9 +216,9 @@
                 <a class="dropdown-item" href="user-profile.html">User profile</a>
                 <a class="dropdown-item" href="dashboard.html">Dashboard</a>
                 <a class="dropdown-item" href="#">Something else here</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item d-flex justify-content-center align-items-center bg-primary text-white"
-                  href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+
+                <a class="dropdown-item dropdown-btn d-flex justify-content-center align-items-center bg-primary text-white"
+                  href="#"><i class="fas fa-sign-out-alt"></i>&nbsp;Logout</a>
               </div>
             </div>
           </li>
@@ -226,8 +226,9 @@
       </div>
     </div>
   </nav>
-
+  <!--  -->
   <!-- Section: Wall -->
+  <!--  -->
   <section class="container margin-top">
     <div class="row">
       <!-- Left Content -->
@@ -257,7 +258,7 @@
             <img class="round-img mr-2 img-xs"
               src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="" />
             <div class="menu-top-btn">
-              <a href="#" class="btn btn-dark-primary">Add Post</a>
+              <a href="#" class="btn btn-dark-primary">Add Job</a>
               <a href="#" class="btn btn-dark-primary">Add Post</a>
             </div>
           </div>
@@ -297,7 +298,43 @@
                 <span class="badge">123</span>
               </div>
               <div class="comments"><i class="far fa-comment-alt"></i>
-                <span class="badge">55</span>
+                <a class="" data-toggle="collapse" href="#commentCollapse" role="button" aria-expanded="false"
+                  aria-controls="commentCollapse">
+                  <span class="badge">55</span>
+                </a>
+              </div>
+            </div>
+            <!--  -->
+            <!-- Comment Collapse -->
+            <!--  -->
+            <div class="collapse mt-3" id="commentCollapse">
+              <div class="card card-body">
+                <!-- Comment Media-->
+                <div class="media">
+                  <img src="..." class="comment-user-img" alt="...">
+                  <div class="media-body">
+                    <h5 class="mt-0">Media heading</h5>
+                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                    purus odio,
+                    vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                    fringilla. Donec lacinia
+                    congue felis in faucibus.
+
+                    <div class="media mt-3">
+                      <a class="mr-3" href="#">
+                        <img src="..." class="mr-3" alt="...">
+                      </a>
+                      <div class="media-body">
+                        <h5 class="mt-0">Media heading</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio,
+                        vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate
+                        fringilla. Donec
+                        lacinia congue felis in faucibus.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -339,6 +376,46 @@
             </div>
           </div>
         </div>
+
+        <h4 class="">Recent Jobs</h4>
+        <div class="card bg-light text-dark mb-3">
+          <div class="card-header">
+            <div>
+              <img class="round-img mr-2 img-xs"
+                src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="" />
+              <h5 class="header-user-name">Company</h5>
+              <span class="header-time"><i class="fas fa-clock"></i> 3 min ago</span>
+            </div>
+            <div class="header-menu">
+              <div class="dropdown clearfix">
+                <div class="dropdown-toggle" data-toggle="dropdown"><a><i
+                      class="fas fa-ellipsis-v dropdown-toggle"></i></a>
+                </div>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                  <li class="ml-3"><a href="#">Edit Post</a></li>
+                  <li class="ml-3"><a href="#">Delete Post</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <Job class="card-title">Job title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <a href="#" class="btn btn-dark-primary btn-sm mb-2">View More</a>
+              <div class="text-border"></div>
+              <div class="post-bottom">
+                <div class="likes"><i class="fas fa-thumbs-up"></i>
+                  <span class="badge">123</span>
+                </div>
+                <div class="comments"><i class="far fa-comment-alt"></i>
+                  <span class="badge">55</span>
+                </div>
+              </div>
+          </div>
+        </div>
+
         <!-- /Post Card -->
       </div>
       <!-- Right Content Hidden on sm -->

@@ -8,6 +8,7 @@
 
   .dropdown-menu {
     position: absolute;
+    padding-bottom: 0;
 
     &.dropdown-menu-center {
       right: auto;
@@ -15,6 +16,12 @@
       -webkit-transform: translate(-50%, 0);
       -o-transform: translate(-50%, 0);
       transform: translate(-50%, 0);
+    }
+
+    .dropdown-btn {
+      margin-top: 1rem;
+      padding: 0.7rem 0;
+      font-size: 1rem;
     }
   }
 }
